@@ -19,7 +19,7 @@ class CompList extends React.Component{
 
         return <div>
             {this.state.commentList.map(item=>{
-            return <Content key={item.id} {...this.state.commentList}></Content>
+            return <Content key={item.id} {...item}></Content>
         })}
         </div>
 
