@@ -17,9 +17,11 @@ class CompList extends React.Component{
     }
     render(){
 
-        return this.state.commentList.map(item=>{
-            return <Comment key={item.id} {...this.state.commentList}></Comment>
-        })
+        return <div>
+            {this.state.commentList.map(item=>{
+            return <Content key={item.id} {...this.state.commentList}></Content>
+        })}
+        </div>
 
 
 
