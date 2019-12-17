@@ -2,6 +2,7 @@ import React from 'react'
 
 import helloCss from '@/css/hello.css'
 
+
 export default class Hello extends React.Component{
     constructor(props) {
         super(props);
