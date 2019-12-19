@@ -7,7 +7,7 @@ module.exports = {
             {test:/\.js|jsx$/,use:['babel-loader'], exclude: /node_modules/},
             //这里exclude后面的值是一个js的正则对象，不是字符串，所以没有引号，所以一定不要以为是字符串的路径
             {
-             test:/\.css/,
+             test:/\.scss/,
              use:[
                     {
                         loader:'style-loader'
@@ -19,6 +19,17 @@ module.exports = {
                                 localIdentName:'[path][name]-[local]-[hash:5]'
                             }
                         }
+                    }
+             ],
+            exclude: /node_modules/},
+            {
+             test:/\.css/,
+             use:[
+                    {
+                        loader:'style-loader'
+                    },
+                    {
+                        loader:'css-loader',
                     }
              ],
             exclude: /node_modules/}
